@@ -1,0 +1,17 @@
+->map,filter and reduce are paradigms of functional programming
+-> map and filter come built in with python(built in functions)
+-> reduce, needs to be imported as it resides in functional tools
+
+
+
+->syntax
+filter(function,iterable)
+->function : it tests if each element of a sequenece True or not
+->sequenece : which needs to be filtered, it can be list,sets,tuples or containers of any
+iterators
+
+
+->lambda function(also known as Anonymous function) - > function without a name
+->this function can take any number of arguemnts bu only one expression,which is evaluated and returned
+
+Syntax: lambda arguemnts: expression
