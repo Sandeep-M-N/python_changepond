@@ -15,3 +15,10 @@ iterators
 ->this function can take any number of arguemnts bu only one expression,which is evaluated and returned
 
 Syntax: lambda arguemnts: expression
+
+map() function returns a map object(which is an iterator) of the results
+after applying the given functon to each item of a given iterable(list,tuple etc)
+or allows you to process and transform all the items in an iterable without using an explicit for loop, a technique commonly known as  mapping
+
+syntax:
+map(function,iterable,[iterable1,iterable2....])
