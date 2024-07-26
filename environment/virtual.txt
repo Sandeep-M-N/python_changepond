@@ -1,0 +1,10 @@
+virtualenvwrapper - to have a virtual environment
+link -> https://pypi.org/project/virtualenvwrapper-win/
+link for django -> https://www.django-rest-framework.org/
+
+steps:
+1. pip install virtualenvwrapper-win
+2 . mkvirtualenv environmentName
+3. in the same install the necessary packages
+4. to install django : pip install django
+5. to check what are the packages installed: pip freeze

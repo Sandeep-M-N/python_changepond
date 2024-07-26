@@ -6,7 +6,7 @@ def main():
     for i in range(size):
         value = int(input())
         list1.append(value)
-    print("user list : ",list1) #[3,4,5,2]
+    print("user list : ",list1) #[3,4,5,6]
 
     map_list=list(map(lambda num : num**3,list1)) #[27,64,125,216]
     print(map_list)
