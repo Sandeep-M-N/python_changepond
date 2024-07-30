@@ -2,4 +2,4 @@ variable length arguement:
 -> allows a function to accept a variable number of arguements
 Types:
 1. non-keyworded Arguements(*args) -> it takes all values as a 1tuple only, we are manipulating a tuple *remember it*
-2.keyworded Arguements(**kwargs)
+2.keyworded Arguements(**kwargs) -> it takes as a key value pairs as similar to dictionary, we have to declare as a key value pair only
