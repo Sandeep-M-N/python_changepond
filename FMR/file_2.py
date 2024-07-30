@@ -3,10 +3,16 @@
 # print(file_read.read())
 import os
 def CreateFile(file_name): #filename = calculator_grade.py
-    if(os.path.exists(file_name)):
-        print("file name is already exists")
-    else:
-        file_create=open(file_name,'w')
+    # if(os.path.exists(file_name)):
+    #     print("file name is already exists")
+    # else:
+        # file_create=open(file_name,'w')
+    try:
+
+        file_create=open(file_name,'r')
+    except FileNotFoundError:
+        print("file not found")
+
 def main():
     print("enter the file name you want to create")
     file_name=input()
