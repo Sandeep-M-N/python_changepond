@@ -1,21 +1,25 @@
 class Product:
     product_id=0
+    name_list=[]
+    product_id=[]
+    price_list=[]
     def __init__(self,Pname,Pprice):
         self.Pname=Pname
         self.Pprice=Pprice
         Product.product_id+=1
         self.id=self.product_id
     def AddProducts(self,Pname,Pprice):
-        self.name_list=[]
-        self.product_id=[]
-        self.price_list=[]
-        name_list.append(Pname)
-        product_id.append(self.id)
-        price_list.append(Pprice)
+       
+        Product.name_list.append(Pname)
+        self.product_id.append(self.id)
+        Product.price_list.append(Pprice)
 
 
-    def productDetails(self,display_id):
-       print("your product ")
+    def productDetails(display_id):
+       print("product Id id : ",Product.product_id[display_id-1])
+       print("product name is : ",Product.name_list[display_id-1])
+       print("product price is : ",Product.price_list[display_id-1])
+
 
 
 while True:
@@ -29,9 +33,13 @@ while True:
         Pname=input("Enter The Product Name: ")
         Pprice=int(input("Enter The product Price: "))
         Product.AddProducts(Pname,Pprice)
+        
     elif(choice==2):
         print("Enter the id to displayed")
         display_id=int(input())
         Product.productDetails(display_id)
+       
+    else:
+        print("you have entered a wrong choice")
 
 
