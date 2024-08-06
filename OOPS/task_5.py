@@ -11,35 +11,43 @@
 
 class BankAccount:
     ROI = 10.5
-
+    
     def __init__(self):
         self.Name = ""
-        self.Amount = 0
-    def deposit(self):
-        depositamount=int(input("Enter the amount to be deposited: "))
+        self.Amount =1000
+   
+
+    def deposit(self,depositamount):
+      
         self.Amount+=depositamount
-        print("your total amount is: ",self.Amount)
-    def withdraw(self):
-        withdrawamount=int(input("enter the amount to be withdraw: "))
+        print("your total amount after deposit is: ",self.Amount)
+    def withdraw(self, withdrawamount):
+        
         self.Amount-=withdrawamount
         print("your  total amount aftervwithdrawl is: ",self.Amount)
 
     def CalculateInterest(self):
         interest=(BankAccount.ROI*self.Amount)//100
         print("your total interest is : ",interest)
-
+    
     def display(self):
         name=input("Enter the Account Holder Name: ")
         amount=int(input("enter the amount: "))
         self.Name=name
         self.Amount=amount
 
+    @staticmethod
+    def displayKYCinfo(aadhar,photo):
+        print("submit your aadhar: ",aadhar)
+        print("submit your 2passport size photo",photo)
+
 def main():
     bank=BankAccount()
-    bank.display()
-    bank.deposit()
-    bank.withdraw()
-    bank.CalculateInterest()
+    # bank.display()
+    bank.deposit(500)
+    bank.withdraw(300)
+    # bank.CalculateInterest()
+    # bank.displayKYCinfo(4767978657632,"demo.jpg")
 
 if __name__=="__main__":
     main()
