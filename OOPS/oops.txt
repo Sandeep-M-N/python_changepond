@@ -22,3 +22,17 @@ Objects:
 -> the properties that all objects have are defined in a method called __init__()
 
 -> __init__ sets the inital stage of the object
+
+property function:
+-> property() method is a built-in function
+-> allows us to create a special type of attribute called a property for a class
+-> to manage attribute access, Encapsulation and validation within a class
+-> the property() function can be used instead of the 
+@property deocorator to achieve same functionaity
+
+# syntax
+property(fget=None,fset=None,fdel=None,doc=None)
+fget-> function to get the value
+fset -> function to set the value
+fdel -> function to delete the attribute
+doc -> string that serves as the documentries for the attribute 
