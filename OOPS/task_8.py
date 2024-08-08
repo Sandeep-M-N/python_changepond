@@ -20,12 +20,21 @@ class Numbers:
     def chkPrime(self):
         count=0
         self.value=int(input("enter the value: "))
+        self.value=self.value//2
+        if(self.value==1 or self.value==2):
+            return(f'{self.value} is a Prime number')
+        
+        
         for i in range(2,self.value):
             if(self.value%2!=0):
                 count=0
             else:
                 count=1
         if(count==0):
-            print("it is prime number")
+            return(f'{self.value} is a prime number')
         else:
-            print("it is not a prime number")
+            print(f'{self.value} is not a prime number')
+
+
+    def factors(self):
+        pass
