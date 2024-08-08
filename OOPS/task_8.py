@@ -20,21 +20,72 @@ class Numbers:
     def chkPrime(self):
         count=0
         self.value=int(input("enter the value: "))
-        self.value=self.value//2
-        if(self.value==1 or self.value==2):
+        num1=self.value
+        if(num1==1 or num1==2):
             return(f'{self.value} is a Prime number')
         
+        num1=num1//2
+       
         
-        for i in range(2,self.value):
-            if(self.value%2!=0):
+        for i in range(2,num1):
+            if(num1%i!=0):
                 count=0
             else:
                 count=1
         if(count==0):
             return(f'{self.value} is a prime number')
         else:
-            print(f'{self.value} is not a prime number')
+            return(f'{self.value} is not a prime number')
 
 
     def factors(self):
-        pass
+        list1=[]
+          
+        self.value=int(input("enter the value: "))
+        
+      
+        
+        for i in range(1,self.value+1):
+            if(self.value%i==0):
+                list1.append(i)
+       
+        return list1
+    
+    def sum_of_factors(self):
+        
+        sum=0
+        self.value=int(input("enter the value: "))
+        
+       
+            
+        
+        
+        for i in range(1,self.value+1):
+            if(self.value%i==0):
+                sum+=i
+        
+        return sum
+    
+def main():
+    obj1=Numbers()
+    while True:
+        print("1.Check Prime")
+        print("2.list all the factors")
+        print("3.sum of factors")
+        print()
+        choice=int(input("Enter the  choice : "))
+        if(choice==1):
+            print(obj1.chkPrime())
+            break
+        elif(choice==2):
+            print(obj1.factors())
+            break
+        else:
+            print(obj1.sum_of_factors())
+            break
+
+    
+if __name__=="__main__":
+    main()
+    
+        
